@@ -1,0 +1,14 @@
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.listcard {
+  display: grid;
+  grid-template-columns: 20rem 20rem 20rem ;
+  justify-content: center;
+
+  gap: 2rem;
+}

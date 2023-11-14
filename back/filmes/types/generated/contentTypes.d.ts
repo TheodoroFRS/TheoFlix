@@ -376,9 +376,10 @@ export interface ApiFilmeFilme extends Schema.CollectionType {
   attributes: {
     titulo: Attribute.String;
     sinopse: Attribute.Text;
-    capa: Attribute.Media;
-    Ativo: Attribute.Boolean;
+    alt: Attribute.String;
     lancamento: Attribute.String;
+    capa: Attribute.String;
+    Capa: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -1,0 +1,47 @@
+.evento {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+
+    font-size: 20px;
+    text-align: center;
+
+    width: auto;
+    height: auto;
+
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+
+    font-size: 20px;
+    text-align: justify;
+
+    width: auto;
+    height: auto;
+}
+
+.image {
+    width: 30%;
+    height: 10%;
+}
+
+
+.eventoTitulo {
+    color: black;
+    padding-bottom: 10px;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+
+    line-height: 40px;
+    text-align: center;
+
+}

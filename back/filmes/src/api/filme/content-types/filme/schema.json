@@ -13,27 +13,30 @@
   "pluginOptions": {},
   "attributes": {
     "titulo": {
-      "type": "string"
+      "type": "string",
+      "required": false
     },
     "sinopse": {
       "type": "text"
     },
+    "alt": {
+      "type": "string"
+    },
+    "lancamento": {
+      "type": "string"
+    },
     "capa": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
+      "type": "string"
+    },
+    "Capa": {
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
-    },
-    "Ativo": {
-      "type": "boolean"
-    },
-    "lancamento": {
-      "type": "string"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

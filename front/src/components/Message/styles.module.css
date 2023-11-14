@@ -1,0 +1,52 @@
+
+.container {
+      padding-top: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;     
+      
+      
+}
+
+.caixa{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      border: solid 1px var(--cor-primaria);
+
+      border-radius: 10px;
+
+      color: var(--cor-preto);
+
+      font-family: var(--font-primaria);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      width: 619px;
+      height: 70px;  
+}
+
+.error{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      border: solid 1px var(--cor-primaria);
+
+      border-radius: 10px;
+
+      background-color:var(--cor-error);
+
+      color: var(--cor-preto);
+
+      font-family: var(--font-primaria);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      width: 619px;
+      height: 70px;  
+}

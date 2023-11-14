@@ -1,5 +1,5 @@
 {
-  "name": "back",
+  "name": "filmes",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -25,7 +25,7 @@
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "b72841df-c393-47f6-8b56-995dfab660db"
+    "uuid": "e86138cc-6aa4-42df-b48d-96721b1481b6"
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
