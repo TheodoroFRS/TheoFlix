@@ -11,9 +11,9 @@ export default function Home() {
         <>
             <Header/>
           
-            <Container>
+         
                 <ListFilmes />
-            </Container>
+         
 
             <Container>
                 

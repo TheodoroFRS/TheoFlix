@@ -15,7 +15,7 @@ export default function Card({ id, titulo, src, alt, lancamento, ...props }) {
                     <h2 className={styles.cardTitulo}>{titulo}</h2>
 
                     <div className={styles.data}>
-                        <div>Lançamento: {lancamento}</div>
+                        {/* <div>Lançamento: {lancamento}</div> */}
 
                     </div>
                 </Link>

@@ -3,10 +3,12 @@ import Card from "../card";
 import styles from "./styles.module.css"
 import axios from "axios";
 import { api } from "@/service/api";
-import Message from "@/components/message";
+// import Message from "@/components/message";
+import Message from "../Message";
 import Container from "../Container";
 import { formatarData } from "@/utils/mascaras";
 import { useRouter } from "next/router";
+import Banner from "../Banner";
 
 export default function ListFilmes() {
 
@@ -42,12 +44,14 @@ export default function ListFilmes() {
     return (
         <>
  
-            
+{/*             
                 <Message
                     Texto="Nenhum filme encontrado!"
                     ativo={message}
                     error
-                />
+                /> */}
+
+            <Banner texto={"Bem vindo(a)"} sub_titulo={"Explore suas séries favoritas"}/>
 
             <div className={styles.listcard}>
 
@@ -60,7 +64,7 @@ export default function ListFilmes() {
                                 src={document.attributes.capa} 
                                 alt={document.attributes.alt}
                                 //sinopse={document.attributes.sinopse}
-                                lancamento={document.attributes.lancamento}
+                                //lancamento={document.attributes.lancamento}
                              
                             />
                         )}

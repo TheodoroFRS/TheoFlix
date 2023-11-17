@@ -7,8 +7,36 @@
 
 .listcard {
   display: grid;
-  grid-template-columns: 20rem 20rem 20rem ;
+  grid-template-columns: 20rem 20rem 20rem 20rem 20rem;
   justify-content: center;
 
   gap: 2rem;
+
+
+
+}
+
+@media (max-width: 1720px) {
+  .listcard {
+    grid-template-columns: 20rem 20rem 20rem 20rem;
+  }
+}
+
+
+@media (max-width: 1367px) {
+  .listcard {
+    grid-template-columns: 20rem 20rem 20rem;
+  }
+}
+
+@media (max-width: 1027px) {
+  .listcard {
+    grid-template-columns: 20rem 20rem ;
+  }
+}
+
+@media (max-width: 670px) {
+  .listcard {
+    grid-template-columns: 20rem;
+  }
 }

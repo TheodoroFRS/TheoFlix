@@ -8,8 +8,8 @@ import { api } from "@/service/api";
 
 import Container from "@/components/Container";
 
-import Message from "@/components/message";
 import { formatarData } from "@/utils/mascaras";
+import Message from "@/components/Message";
 
 
 //npm install -g json-server
@@ -66,11 +66,11 @@ export default function EventosHome() {
 
                 <>
 
-                    <Message
+                    {/* <Message
                         Texto="filme encontrado"
                         ativo={true}
                         success
-                    />
+                    /> */}
 
                     <Filme
                         titulo={filme.titulo}
