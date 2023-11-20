@@ -1,5 +1,9 @@
 
 .header_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   background-image: url("../../../public/img/banner.png");
   background-repeat: no-repeat;
   width: 100%;
@@ -14,5 +18,72 @@
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
-  color: #ffffff;
+  color: #000000;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 180px;
+}
+
+.busca {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+
+.busca input {
+  width:933px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  border-radius: 5px 0px 0px 5px;
+  padding-left: 16px;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.busca button {
+  color: #FFFFFF;
+  font-family: Quicksand;
+  font-size: 14px;
+  width: 153px;
+  height: 40px;
+  border-radius: 0px 5px 5px 0px;
+  border: 1px solid #C0392B;
+  background: #C0392B;
+  cursor: pointer;
+}
+
+.busca button:hover {
+  background: #da2713;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+      margin: 0; 
+  }
+
+  .busca {
+      flex-direction: row; 
+  }
+
+  .busca input {
+      width: auto; 
+      max-width: 100%; 
+      border-radius: 5px; 
+      margin-right: 10px; 
+  }
+
+  .busca button {
+      width: auto; 
+      max-width: 100%; 
+      border-radius: 5px; 
+      margin-top: 0;
+  }
 }

@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import Filme from "@/components/filme";
+import Filme from "@/components/Filme";
 
 import axios from "axios";
 import { useRouter } from "next/router";
@@ -10,6 +10,7 @@ import Container from "@/components/Container";
 
 import { formatarData } from "@/utils/mascaras";
 import Message from "@/components/Message";
+import Imagens from "@/components/Imagens";
 
 
 //npm install -g json-server
@@ -32,7 +33,7 @@ export default function EventosHome() {
             if (id) {
                 const res = await api.get(`/filmes/${id}`)
                 setFilme(res.data.data.attributes)
-                console.log(res.data.data.attributes.titulo);
+                console.log(res.data.data.attributes);
                 // .then(resultado => setEvento(resultado.data));
                 setMessage(false)
             }
@@ -78,6 +79,11 @@ export default function EventosHome() {
                         alt={filme.alt}
                         sinopse={filme.sinopse}
                         lancamento={filme.lancamento}
+                    />
+
+                    <Imagens 
+                         src={filme.Imagens}
+                         alt={"Imagens do filme"}
                     />
                 </>
 

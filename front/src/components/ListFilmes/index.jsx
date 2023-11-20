@@ -42,16 +42,12 @@ export default function ListFilmes() {
     }, [router]);
 
     return (
-        <>
- 
-{/*             
+        <>           
                 <Message
                     Texto="Nenhum filme encontrado!"
                     ativo={message}
                     error
-                /> */}
-
-            <Banner texto={"Bem vindo(a)"} sub_titulo={"Explore suas séries favoritas"}/>
+                />
 
             <div className={styles.listcard}>
 

@@ -29,6 +29,17 @@
       "type": "string"
     },
     "Capa": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "imagens": {
       "allowedTypes": [
         "images",
         "files",
@@ -36,7 +47,7 @@
         "audios"
       ],
       "type": "media",
-      "multiple": false
+      "multiple": true
     }
   }
 }

@@ -13,7 +13,7 @@
 
 }
 
-.conteudo{
+.conteudo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -28,8 +28,8 @@
 }
 
 .image {
-    width: 30%;
-    height: 10%;
+    width: 500px;
+    height: 500px
 }
 
 
@@ -44,4 +44,25 @@
     line-height: 40px;
     text-align: center;
 
+}
+
+.sinopse {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.backimage {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.desfocar {
+    text-align: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: rgba(247, 247, 247, 0.438);
+    width: 100%;
 }
