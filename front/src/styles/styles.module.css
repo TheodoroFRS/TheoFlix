@@ -1,42 +1,38 @@
-.titulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.image {
+  width: 500px;
+  height: 500px;
   }
   
   
-  .listcard {
+  .list_imagens {
     display: grid;
     grid-template-columns: 20rem 20rem 20rem 20rem 20rem;
     justify-content: center;
-  
     gap: 2rem;
-  
-  
-  
+   
   }
   
   @media (max-width: 1720px) {
-    .listcard {
+    .list_imagens {
       grid-template-columns: 20rem 20rem 20rem 20rem;
     }
   }
   
   
   @media (max-width: 1367px) {
-    .listcard {
+    .list_imagens {
       grid-template-columns: 20rem 20rem 20rem;
     }
   }
   
   @media (max-width: 1027px) {
-    .listcard {
+    .list_imagens {
       grid-template-columns: 20rem 20rem ;
     }
   }
   
   @media (max-width: 670px) {
-    .listcard {
+    .list_imagens {
       grid-template-columns: 20rem;
     }
   }

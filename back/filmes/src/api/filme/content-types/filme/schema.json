@@ -25,9 +25,6 @@
     "lancamento": {
       "type": "string"
     },
-    "capa": {
-      "type": "string"
-    },
     "Capa": {
       "type": "media",
       "multiple": false,
@@ -40,14 +37,39 @@
       ]
     },
     "imagens": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "temporadas": {
+      "type": "integer"
+    },
+    "Palavras_chave": {
+      "type": "customField",
+      "customField": "plugin::tagsinput.tags"
+    },
+    "generos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::genero.genero"
+    },
+    "avaliacaoes_positivas": {
+      "type": "biginteger"
+    },
+    "avaliacaoes_negativas": {
+      "type": "biginteger"
+    },
+    "duracao": {
+      "type": "string"
+    },
+    "classificacao": {
+      "type": "string"
     }
   }
 }

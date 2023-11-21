@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
             <Header/>
-            <Banner texto={"Bem vindo(a)"} sub_titulo={"Explore suas séries favoritas"}/>
+            <Banner texto={"Bem vindo(a)"} sub_titulo={"Explore suas Filmes e Séries favoritas"} imagem={"../img/banner.webp"} />
          
                 <ListFilmes />
          

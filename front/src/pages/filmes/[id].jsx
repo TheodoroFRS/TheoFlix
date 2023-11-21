@@ -1,16 +1,16 @@
 import Header from "@/components/Header";
-import Filme from "@/components/Filme";
+// import Filme from "@/components/Filme";
 
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react"
 import { api } from "@/service/api";
-
+import styles from '@/styles/styles.module.css';
 import Container from "@/components/Container";
 
 import { formatarData } from "@/utils/mascaras";
 import Message from "@/components/Message";
-import Imagens from "@/components/Imagens";
+import Filme from "@/components/filme";
 
 
 //npm install -g json-server
@@ -31,7 +31,7 @@ export default function EventosHome() {
     async function getEventos() {
         try {
             if (id) {
-                const res = await api.get(`/filmes/${id}`)
+                const res = await api.get(`/filmes/${id}?populate=*`)
                 setFilme(res.data.data.attributes)
                 console.log(res.data.data.attributes);
                 // .then(resultado => setEvento(resultado.data));
@@ -50,9 +50,9 @@ export default function EventosHome() {
     }, [router]);
 
 
-  return (
+    return (
         <>
-            <Header/>
+            <Header />
             {message == true ? (
                 <>
                     <Message
@@ -75,16 +75,21 @@ export default function EventosHome() {
 
                     <Filme
                         titulo={filme.titulo}
-                        src={filme.capa}
+                        src={"http://localhost:1337" + filme.Capa?.data.attributes.url} 
                         alt={filme.alt}
                         sinopse={filme.sinopse}
                         lancamento={filme.lancamento}
                     />
 
-                    <Imagens 
-                         src={filme.Imagens}
-                         alt={"Imagens do filme"}
-                    />
+                    <div className={styles.list_imagens} >
+                        {filme?.imagens?.data?.map(document =>
+                            //key = { document },
+                            <img className={styles.image} src={"http://localhost:1337" + document.attributes.url} alt={"Imagens do filme"} />
+
+                        )}
+                    </div>
+
+
                 </>
 
             )}

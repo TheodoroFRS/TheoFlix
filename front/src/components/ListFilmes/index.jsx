@@ -22,7 +22,7 @@ export default function ListFilmes() {
 
     async function getEventos() {
         try {
-            const res = await api.get(`/filmes`)
+            const res = await api.get(`/filmes?populate=*`)
             setFilmes(res.data.data)
             console.log("get",res.data.data);
             // .then(resultados => setEventos(resultados.data))
@@ -57,7 +57,7 @@ export default function ListFilmes() {
                                 key={document.id}
                                 id={document.id}
                                 titulo={document.attributes.titulo}
-                                src={document.attributes.capa} 
+                                src={"http://localhost:1337"+document.attributes.Capa.data.attributes.url} 
                                 alt={document.attributes.alt}
                                 //sinopse={document.attributes.sinopse}
                                 //lancamento={document.attributes.lancamento}
