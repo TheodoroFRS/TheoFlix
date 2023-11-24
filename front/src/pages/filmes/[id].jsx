@@ -11,6 +11,7 @@ import Container from "@/components/Container";
 import { formatarData } from "@/utils/mascaras";
 import Message from "@/components/Message";
 import Filme from "@/components/filme";
+import Titulo from "@/components/Titulo";
 
 
 //npm install -g json-server
@@ -75,21 +76,105 @@ export default function EventosHome() {
 
                     <Filme
                         titulo={filme.titulo}
-                        src={"http://localhost:1337" + filme.Capa?.data.attributes.url} 
+                        src={"http://localhost:1337" + filme.Capa?.data.attributes.url}
                         alt={filme.alt}
                         sinopse={filme.sinopse}
                         lancamento={filme.lancamento}
                     />
 
-                    <div className={styles.list_imagens} >
-                        {filme?.imagens?.data?.map(document =>
-                            //key = { document },
-                            <img className={styles.image} src={"http://localhost:1337" + document.attributes.url} alt={"Imagens do filme"} />
+                    <Titulo> Imagens </Titulo>
+                    <div className={styles.container}>
 
-                        )}
+                        <div className={styles.list_imagens} >
+
+                            {filme?.imagens?.data?.map(document =>
+                                //key = { document },
+                                <img className={styles.image} src={"http://localhost:1337" + document.attributes.url} alt={"Imagens do filme"} />
+
+                            )}
+                        </div>
                     </div>
 
+                    <Titulo> Elenco </Titulo>
+                    <div className={styles.container_autores}>
+                        <div className={styles.list_autores}>
+                            <div className={styles.autor}>
+                                1
+                            </div>
+                            <div className={styles.autor}>
+                                2
+                            </div>
 
+                            <div className={styles.autor}>
+                                3
+                            </div>
+
+                            <div className={styles.autor}>
+                                4
+                            </div>
+
+                            <div className={styles.autor}>
+                                5
+                            </div>
+
+                            <div className={styles.autor}>
+                                6
+                            </div>
+                            <div className={styles.autor}>
+                                7
+                            </div>
+                            <div className={styles.autor}>
+                                8
+                            </div>
+                            <div className={styles.autor}>
+                                9
+                            </div>
+                            <div className={styles.autor}>
+                                10
+                            </div>
+                            <div className={styles.autor}>
+                                11
+                            </div>
+
+                            <div className={styles.autor}>
+                                1
+                            </div>
+                            <div className={styles.autor}>
+                                2
+                            </div>
+
+                            <div className={styles.autor}>
+                                3
+                            </div>
+
+                            <div className={styles.autor}>
+                                4
+                            </div>
+
+                            <div className={styles.autor}>
+                                5
+                            </div>
+
+                            <div className={styles.autor}>
+                                6
+                            </div>
+                            <div className={styles.autor}>
+                                7
+                            </div>
+                            <div className={styles.autor}>
+                                8
+                            </div>
+                            <div className={styles.autor}>
+                                9
+                            </div>
+                            <div className={styles.autor}>
+                                10
+                            </div>
+                            <div className={styles.autor}>
+                                11
+                            </div>
+                        </div>
+                    </div>
                 </>
 
             )}

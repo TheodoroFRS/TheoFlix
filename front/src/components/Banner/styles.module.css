@@ -10,7 +10,7 @@
 
 }
 
-.header_image {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,8 +28,8 @@
 
 .container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  margin-left: 180px;
   background: #ffffffa3;
   padding: 25px;
   border: 1px solid #00000000;

@@ -5,7 +5,7 @@ export default function Banner({ texto, sub_titulo, imagem }) {
     return (
         <>
         <div className={styles.image} style={{ 'backgroundImage': `url(${imagem})` }}>
-            <div className={styles.header_image}>
+            <div className={styles.header}>
                 <div className={styles.container}>
                     <p className={styles.header_title}>{texto}</p>
                     <p className={styles.header_title}>{sub_titulo}</p>
