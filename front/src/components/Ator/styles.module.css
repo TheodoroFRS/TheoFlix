@@ -1,0 +1,45 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 1rem;
+   
+    font-size: 20px;
+    text-align: center;
+
+    width: 100%;
+    height: auto;
+    
+
+    text-decoration: none;   
+}
+
+.image{
+    width: 100%;
+    height: 40%;
+}
+
+
+.cardNome {
+    width: 200px;
+
+    color: black;
+  
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 22px;
+  
+    text-align: center;
+}
+
+.personagem {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-size: 22px;
+    text-align: center;
+}
+
+

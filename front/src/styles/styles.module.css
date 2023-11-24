@@ -10,13 +10,6 @@
   margin: 1rem;
 }
 
-.container_autores {
-
-  background-color: brown;
-}
-
-
-
 .list_imagens {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -25,46 +18,41 @@
 
 }
 
-.list_autores {
+.container_atores {
+  width: 90%;
+}
+
+.atores {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+
+.list_atores {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  align-items: flex-start;
   flex-direction: row;
 
   width: auto;
-  overflow-x: scroll;
-  overflow-y: hidden;
-
+  gap: 2rem;
 
 
 }
 
-.list_autores::-webkit-scrollbar {
+.atores::-webkit-scrollbar {
   width: 3px;
   height: 5px;
   /* A altura só é vista quando a rolagem é horizontal */
 }
 
-.list_autores::-webkit-scrollbar-track {
+.atores::-webkit-scrollbar-track {
   background: transparent;
   padding: 2px;
 }
 
-.list_autores::-webkit-scrollbar-thumb {
-  background-color: var(--cor-primaria);
+.atores::-webkit-scrollbar-thumb {
+  background-color: var(--cor-terciaria);
 }
-
-.autor {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100px;
-  height: 100px;
-  gap: 2rem;
-  background-color: aqua;
-
-}
-
 
 
 @media (max-width: 1720px) {

@@ -13,6 +13,12 @@
 
 }
 
+.titulo{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
 .conteudo {
     display: flex;
     flex-direction: column;
@@ -65,4 +71,18 @@
     backdrop-filter: blur(10px);
     background: rgba(247, 247, 247, 0.438);
     width: 100%;
+}
+
+.classificacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+
+    border: 1px solid black;
+    border-radius: 20px;
+
+    padding: 0.1rem;
+
 }
