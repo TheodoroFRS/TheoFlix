@@ -21,6 +21,6 @@ export default function Ator({ id, nome, src, alt, personagem, dublador, ...prop
                     {/* </Link> */}
             </div>
         </>
-    )
+    );
 
-}
+};
